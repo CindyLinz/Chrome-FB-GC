@@ -6,9 +6,11 @@ function each(arr, act){
 
 function modify_link(link){
   link.addEventListener('click', function(ev){
-    ev.preventDefault();
-    ev.stopPropagation();
-    chrome.runtime.sendMessage(link.href);
+    if( !ev.ctrlKey ){
+      ev.preventDefault();
+      ev.stopPropagation();
+      chrome.runtime.sendMessage(link.href);
+    }
   });
 }
 
