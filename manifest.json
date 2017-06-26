@@ -1,6 +1,6 @@
 { "manifest_version": 2
 , "name": "FB-GC"
-, "description": "Applying a garbage collection when accessing some pages at FB"
+, "description": "Applying a garbage collection by replacing the tab when accessing some pages at FB"
 , "version": "1.0"
 , "permissions":
   [ "tabs"
